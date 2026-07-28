@@ -1,0 +1,13 @@
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:#050816;
+  overflow-x:hidden;
+}
+
+#root{
+  width:100%;
+}
