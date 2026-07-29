@@ -31,7 +31,8 @@ const Hero = () => {
         <motion.div
           className="hero-left"
           initial={{ opacity: 0, x: -80 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
 
@@ -102,9 +103,10 @@ const Hero = () => {
 
         <motion.div
           className="hero-right"
-          initial={{ opacity: 0, scale: .7 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: .9 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
         >
 
           <div className="profile-card">
